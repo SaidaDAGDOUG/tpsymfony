@@ -1,0 +1,16 @@
+<html>
+<ul class="nav flex-column">
+
+{% for latest in listjobs %}
+   {% if  latest.nomjob == 'Developpeur web'%}
+        <li class="nav-item">
+          <a class="nav-link " href="#" style="color:red;">{{latest.nomjob}}</a>
+        </li>
+    {% else %}
+        <li class="nav-item">
+          <a class="nav-link " href="#" >{{latest.nomjob}}</a>
+        </li>
+    {% endif %}
+{% endfor %}
+</ul>
+</html>

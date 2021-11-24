@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello JobController! !{% endblock %}
+{% block title %}Voir detail job{% endblock %}
 
 {% block body %}
 <style>
@@ -9,8 +9,17 @@
 </style>
 
 <div class="example-wrapper">
-    <h1> Hello my acceuil function ! ✅</h1>
+    <h1> Detail sur l'id : {{job.id}}</h1>
+    <h1>Intitule:{{job.title}} </h1>
+    <h1>Description: {{job.description}}</h1>
+    <h1>Societe: {{job.company}}</h1>
+    
+    <img src={{job.getImage().url}} />
 
-    This friendly message is coming from:
+    
     </div>
 {% endblock %}
+
+
+
+
